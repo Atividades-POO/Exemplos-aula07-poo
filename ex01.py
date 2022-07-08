@@ -27,8 +27,47 @@ def tratamento_int(entrada):
     try:
         return int(entrada)
     except ValueError as e:
-        return f'Erro: {e}, {type(e)=}'
-    raise Exception('Erro')
+        return f'Error: {e}, {type(e)=}'
 
 # função para tratar entradas float
+def tratamento_float(entrada):
+    try:
+        return float(entrada)
+    except ValueError as e:
+        return f'Error: {e}, {type(e)=}'
+
+# função para tratar entradas string
+def tratamento_string(entrada):
+    try:
+        return str(entrada)
+    except ValueError as e:
+        return f'Error: {e}, {type(e)=}'
+
+# função para tratar entradas list
+def tratamento_list(entrada):
+    try:
+        return list(entrada)
+    except ValueError as e:
+        return f'Error: {e}, {type(e)=}'
+
+# função para tratar entradas tuple
+def tratamento_tuple(entrada):
+    try:
+        return tuple(entrada)
+    except ValueError as e:
+        return f'Error: {e}, {type(e)=}'
+
+# função para tratar entradas dict
+def tratamento_dict(entrada):
+    try:
+        return dict(entrada)
+    except ValueError as e:
+        return f'Error: {e}, {type(e)=}'
+
+# função para tratar entradas set
+def tratamento_set(entrada):
+    try:
+        return set(entrada)
+    except ValueError as e:
+        return f'Error: {e}, {type(e)=}'
 
