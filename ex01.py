@@ -71,3 +71,59 @@ def tratamento_set(entrada):
     except ValueError as e:
         return f'Error: {e}, {type(e)=}'
 
+# função para tratar erro ZeroDivisionError
+def tratamento_ZeroDivisionError(entrada):
+    try:
+        return int(entrada) / 0
+    except ZeroDivisionError as e:
+        return f'Error: {e}, {type(e)=}'
+
+# função para tratar erro TypeError
+def tratamento_TypeError(entrada):
+    try:
+        return int(entrada) + 'a'
+    except TypeError as e:
+        return f'Error: {e}, {type(e)=}'
+
+# função para tratar erro IndexError
+def tratamento_IndexError(entrada):
+    try:
+        return entrada[10]
+    except IndexError as e:
+        return f'Error: {e}, {type(e)=}'
+
+# função para tratar erro KeyError
+def tratamento_KeyError(entrada):
+    try:
+        return entrada['a']
+    except KeyError as e:
+        return f'Error: {e}, {type(e)=}'
+
+# função para tratar erro ValueError
+def tratamento_ValueError(entrada):
+    try:
+        return int(entrada)
+    except ValueError as e:
+        return f'Error: {e}, {type(e)=}'
+
+# função para tratar erro AttributeError
+def tratamento_AttributeError(entrada):
+    try:
+        return entrada.a
+    except AttributeError as e:
+        return f'Error: {e}, {type(e)=}'
+
+# função para tratar erro SyntaxError
+def tratamento_SyntaxError(entrada):
+    try:
+        return eval(entrada)
+    except SyntaxError as e:
+        return f'Error: {e}, {type(e)=}'
+
+# função para tratar erro ImportError
+def tratamento_ImportError(entrada):
+    try:
+        return __import__(entrada)
+    except ImportError as e:
+        return f'Error: {e}, {type(e)=}'
+
