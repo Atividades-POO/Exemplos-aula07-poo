@@ -58,7 +58,7 @@ def tratamento_tuple(entrada):
         return f'Error: {e}, {type(e)=}'
 
 # função para tratar entradas dict
-def tratamento_dict(entrada):
+def tratamento_dict(entrada, chave=None):
     try:
         return dict(entrada)
     except ValueError as e:
