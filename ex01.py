@@ -27,7 +27,8 @@ def tratamento_int(entrada):
     try:
         return int(entrada)
     except ValueError as e:
-        return "Valor inteiro inválido"
+        return f'Erro: {e}, {type(e)=}'
+    raise Exception('Erro')
 
 # função para tratar entradas float
 
