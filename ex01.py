@@ -5,6 +5,10 @@
 # Carlos Eduardo
 # data: 07/07/2022
 #
+# leitura recomendada:
+# https://docs.python.org/3/library/exceptions.html
+# https://docs.python.org/pt-br/3/tutorial/errors.html
+
 # Crie função de tratamento para entradas “int”.
 # Crie função de tratamento para entradas “float”.
 # Crie função de tratamento para entradas “string”.
@@ -13,13 +17,9 @@
 # Crie função de tratamento para entradas “dict”.
 # Crie função de tratamento para entradas “set”.
 # Escreva uma função para tratar o erro ZeroDivisionError
-
-
 # Escreva uma função para tratar o erro IndexError
-
 # Escreva uma função para tratar o erro ValueError
 # Escreva uma função para tratar o erro AttributeError
-
 # Escreva uma função para tratar o erro ImportError
 
 # função para tratar entradas int
