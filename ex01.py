@@ -14,12 +14,12 @@
 # Crie função de tratamento para entradas “set”.
 # Escreva uma função para tratar o erro ZeroDivisionError
 
-# Escreva uma função para tratar o erro TypeError
+
 # Escreva uma função para tratar o erro IndexError
-# Escreva uma função para tratar o erro KeyError
+
 # Escreva uma função para tratar o erro ValueError
 # Escreva uma função para tratar o erro AttributeError
-# Escreva uma função para tratar o erro SyntaxError
+
 # Escreva uma função para tratar o erro ImportError
 
 # função para tratar entradas int
@@ -74,16 +74,16 @@ def tratamento_set(entrada):
 # função para tratar erro ZeroDivisionError
 def tratamento_ZeroDivisionError(entrada):
     try:
-        return int(entrada) / 0
+        saida = 1 / int(entrada)
+        return f'resultado da divisão: {saida}'
     except ZeroDivisionError as e:
         return f'Error: {e}, {type(e)=}'
-
-# função para tratar erro TypeError
-def tratamento_TypeError(entrada):
-    try:
-        return int(entrada) + 'a'
-    except TypeError as e:
+    except ValueError as e:
         return f'Error: {e}, {type(e)=}'
+    else:
+        return f'Não houve erro ded erro ZeroDivisionError'
+
+
 
 # função para tratar erro IndexError
 def tratamento_IndexError(entrada):
@@ -92,12 +92,7 @@ def tratamento_IndexError(entrada):
     except IndexError as e:
         return f'Error: {e}, {type(e)=}'
 
-# função para tratar erro KeyError
-def tratamento_KeyError(entrada):
-    try:
-        return entrada['a']
-    except KeyError as e:
-        return f'Error: {e}, {type(e)=}'
+
 
 # função para tratar erro ValueError
 def tratamento_ValueError(entrada):
@@ -113,12 +108,7 @@ def tratamento_AttributeError(entrada):
     except AttributeError as e:
         return f'Error: {e}, {type(e)=}'
 
-# função para tratar erro SyntaxError
-def tratamento_SyntaxError(entrada):
-    try:
-        return eval(entrada)
-    except SyntaxError as e:
-        return f'Error: {e}, {type(e)=}'
+
 
 # função para tratar erro ImportError
 def tratamento_ImportError(entrada):
