@@ -11,3 +11,13 @@ print(ex01.tratamento_list(valor))
 print(ex01.tratamento_tuple(valor))
 print(ex01.tratamento_dict(valor))
 print(ex01.tratamento_set(valor))
+print(ex01.tratamento_ZeroDivisionError(valor))
+
+print(ex01.tratamento_IndexError(valor))
+
+print(ex01.tratamento_ValueError(valor))
+print(ex01.tratamento_AttributeError(valor))
+
+print(ex01.tratamento_ImportError(valor))
+
+
